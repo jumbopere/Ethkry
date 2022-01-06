@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+import App from './App';
+import { TransactionProvider} from './context/TransactionContex';
+
 
 ReactDOM.render(
-  <React.StrictMode>
+  <TransactionProvider>
     <App />
-  </React.StrictMode>,
+  </TransactionProvider>,
   document.getElementById('root')
 )
